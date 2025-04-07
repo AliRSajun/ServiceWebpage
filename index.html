@@ -156,7 +156,12 @@
       border-radius: 50%;
       padding: 10px;
     }
-  </style>
+  
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #4b9aaa !important;
+}
+</style>
   </link>
   <style>
     #services .accordion-item {
@@ -201,9 +206,9 @@
   </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
   <!-- Existing body content remains unchanged -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:sticky;top:0;z-index:1000;">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Ali Sajun</a>
       <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -213,6 +218,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#statement">Service Statement</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featuredCarousel">Featured Initiatives</a></li>
           <li class="nav-item"><a class="nav-link" href="#impact">Service Impact</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Service Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#collage">Event Collage</a></li>
@@ -251,7 +257,7 @@
                 src="https://www.aus.edu/sites/default/files/styles/optimized_640/public/news/img_7170.jpg?itok=yYZ7S0KQ"
                 referrerpolicy="no-referrer"
                 style="width: 500; height: 500" />
-              <h4 class="text-danger fw-semibold">Driving Undergraduate Research</h4>
+              <h4 class="text-danger fw-semibold" style="font-size:1.75rem;">Driving Undergraduate Research</h4>
               <p>Recruited and Mentored over 25 undergraduate students on their research journeys, resulting in seven
                 conference papers and two journal papers.
                 Won the Best Short Paper award at the 2024 IEEE ICALT Conference with a paper authored by two of my
@@ -267,8 +273,8 @@
               <img alt="Industry Connection" class="img-fluid mb-3"
                 src="https://www.aus.edu/sites/default/files/article%20/cse_students_explore_cutting-edge_technologies_at_microsoft_innovation_hub.jpg"
                 style="width: 500; height: 500" />
-              <h4 class="text-danger fw-semibold">CSE Industry Connection</h4>
-              <p>Spearheaded the CSE Industry Connection initiative to bridge gap between CSE students and the industry. Acheived this by coordinating visits to industry leaders such as Accenture, Microsoft, and Odoo, bridging the classroom with real-world tech
+              <h4 class="text-danger fw-semibold" style="font-size:1.75rem;">CSE Industry Connection</h4>
+              <p>Spearheaded the CSE Industry Connection initiative to bridge gap between CSE students and the industry. Achieved this by coordinating visits to industry leaders such as Accenture, Microsoft, and Odoo, bridging the classroom with real-world tech
                 exposure for CSE students.</p>
             </div>
           </div>
@@ -280,8 +286,8 @@
               <img alt="Local Trips" class="img-fluid mb-3"
                 src="https://www.aus.edu/sites/default/files/article%20/cse_hosts_student_trip_to_al_aweer_desert.jpeg"
                 style="width: 500; height: 500" />
-              <h4 class="text-danger fw-semibold">Local Student Trips</h4>
-              <p>Organized CSE faculty-student excursions to Hatta, Khorfakkan, Motiongate, Dubai VR Park, and the AI Aweer desert, strengthening community, improving the rapport between faculty and students and enhacing the CSE out-of-classroom experience for students.</p>
+              <h4 class="text-danger fw-semibold" style="font-size:1.75rem;">Local Student Trips</h4>
+              <p>Organized CSE faculty-student excursions to Hatta, Khorfakkan, Motiongate, Dubai VR Park, and the AI Aweer desert, strengthening community, improving the rapport between faculty and students and enhancing the CSE out-of-classroom experience for students.</p>
             </div>
           </div>
         </div>
@@ -293,7 +299,7 @@
               <img alt="CERN Tour" class="img-fluid mb-3"
                 src="https://www.aus.edu/sites/default/files/article%20/cse_students_complete_a_study_tour_in_switzerland_and_france_1.jpg"
                 style="width: 500; height: 500" />
-              <h4 class="text-danger fw-semibold">CEN Study Tours</h4>
+              <h4 class="text-danger fw-semibold" style="font-size:1.75rem;">CEN Study Tours</h4>
               <p>Led groups of CEN students to international visits to key universities, industrial giants and research labs around the world. Led a group of Computer Science and Engineeering students to Switzerland and France in May 2024, including an exclusive guided tour inside CERN, exploring and gaining insights about the
                 world’s largest particle physics lab.</p>
             </div>
@@ -306,7 +312,7 @@
               <img alt="Meet the Faculty" class="img-fluid mb-3"
                 src="https://www.aus.edu/sites/default/files/article%20/cse_holds_meet_the_cse_faculty_event_1.jpg"
                 style="width: 500; height: 500" />
-              <h4 class="text-danger fw-semibold">Meet the CSE Faculty Series</h4>
+              <h4 class="text-danger fw-semibold" style="font-size:1.75rem;">Meet the CSE Faculty Series</h4>
               <p>Designed recurring events for students to connect with CSE faculty in a relaxed environment, building
                 bridges beyond the classroom. Re-established the CSE Faculty Awards, allowing students to vote for faculty in numerous fun categories.</p>
             </div>
@@ -578,7 +584,7 @@
                 <div class="card h-100 shadow-sm text-center">
                   <div class="card-body">
                     <i class="fas fa-plane-departure fa-2x text-dark mb-3"></i>
-                    <h5 class="card-title">International Study Trips</h5>
+                    <h5 class="card-title">IEEE Korea &amp; Italy Trips</h5>
                     <p class="card-text">Chaperoned and led technical study tours to Italy, Singapore and South Korea.
                     </p>
                     <a class="btn btn-outline-dark btn-sm"
