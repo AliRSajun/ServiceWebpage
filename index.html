@@ -9,10 +9,10 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
   <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -158,6 +158,47 @@
     }
   </style>
   </link>
+  <style>
+    #services .accordion-item {
+      border-top: 1px solid #ccc;
+      border-radius: 0.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    #services .accordion-button {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    #services .accordion-body {
+      background-color: #fdfdfd;
+      border-top: 1px solid #eee;
+    }
+  </style>
+  <style>
+    .accordion-button:focus {
+      box-shadow: none !important;
+      border-color: #ddd !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #f7f9fa;
+      border-bottom: 1px solid #eee;
+      box-shadow: none !important;
+    }
+  </style>
+  <style>
+    #services .accordion-button {
+      color: #2c3e50 !important;
+      /* darker muted blue */
+    }
+
+    #services .accordion-button:not(.collapsed) {
+      background-color: #f0f4f7 !important;
+      color: #2c3e50 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -210,8 +251,10 @@
                 src="https://www.aus.edu/media/news/aus-team-wins-best-short-paper-award-for-ai-powered-student-engagement-device-at-ieee-icalt-conference-2024"
                 style="width: 500; height: 500" />
               <h4 class="text-danger fw-semibold">Driving Undergraduate Research</h4>
-              <p>Recruited and Mentored over 25 undergraduate students on their research journeys, resulting in seven conference papers and two journal papers.
-                Won the Best Short Paper award at the 2024 IEEE ICALT Conference with a paper authored by two of my mentees.
+              <p>Recruited and Mentored over 25 undergraduate students on their research journeys, resulting in seven
+                conference papers and two journal papers.
+                Won the Best Short Paper award at the 2024 IEEE ICALT Conference with a paper authored by two of my
+                mentees.
               </p>
             </div>
           </div>
@@ -405,7 +448,7 @@
     <h2 class="section-title">Service by Category</h2>
     <div class="accordion" id="serviceCategories">
       <!-- Student Engagement -->
-      <div class="accordion-item mb-4">
+      <div class="accordion-item mb-4 border-top">
         <h2 class="accordion-header" id="headingEngagement">
           <button aria-expanded="false" class="accordion-button collapsed fw-bold text-primary"
             data-bs-target="#collapseEngagement" data-bs-toggle="collapse" type="button">
@@ -458,7 +501,7 @@
         </div>
       </div>
       <!-- Community Building -->
-      <div class="accordion-item mb-4">
+      <div class="accordion-item mb-4 border-top">
         <h2 class="accordion-header" id="headingCommunity">
           <button aria-expanded="false" class="accordion-button collapsed fw-bold text-primary"
             data-bs-target="#collapseCommunity" data-bs-toggle="collapse" type="button">
@@ -496,7 +539,7 @@
                 <div class="card h-100 shadow-sm text-center">
                   <div class="card-body">
                     <i class="fa-solid fa-gavel fa-2x text-secondary mb-3"></i>
-                    <h5 class="card-title">Judging School Competitionr</h5>
+                    <h5 class="card-title">Judging School Competition</h5>
                     <p class="card-text">Judged AlShola Schools IT Competition</p>
                     <a class="btn btn-outline-secondary btn-sm"
                       href="https://www.aus.edu/article/cse-faculty-invited-to-judge-al-shola-schools-2024-it-competition"
@@ -509,7 +552,7 @@
         </div>
       </div>
       <!-- Global Learning -->
-      <div class="accordion-item mb-4">
+      <div class="accordion-item mb-4 border-top">
         <h2 class="accordion-header" id="headingGlobal">
           <button aria-expanded="false" class="accordion-button collapsed fw-bold text-primary"
             data-bs-target="#collapseGlobal" data-bs-toggle="collapse" type="button">
@@ -536,9 +579,11 @@
                   <div class="card-body">
                     <i class="fas fa-plane-departure fa-2x text-dark mb-3"></i>
                     <h5 class="card-title">IEEE Korea &amp; Italy Trips</h5>
-                    <p class="card-text">Chaperoned and led technical study tours to Italy, Singapore and South Korea.</p>
+                    <p class="card-text">Chaperoned and led technical study tours to Italy, Singapore and South Korea.
+                    </p>
                     <a class="btn btn-outline-dark btn-sm"
-                      href="https://www.aus.edu/article/cen-students-embark-on-study-trip-to-south-korea" target="_blank">Visit Korea</a>
+                      href="https://www.aus.edu/article/cen-students-embark-on-study-trip-to-south-korea"
+                      target="_blank">Visit Korea</a>
                   </div>
                 </div>
               </div>
@@ -547,7 +592,7 @@
         </div>
       </div>
       <!-- Research Mentorship -->
-      <div class="accordion-item mb-4">
+      <div class="accordion-item mb-4 border-top">
         <h2 class="accordion-header" id="headingResearch">
           <button aria-expanded="false" class="accordion-button collapsed fw-bold text-primary"
             data-bs-target="#collapseResearch" data-bs-toggle="collapse" type="button">
@@ -564,20 +609,8 @@
                     <h5 class="card-title">26 Co-Authors</h5>
                     <p class="card-text">Mentored undergraduates across 26 co-authored research publications.</p>
                     <a class="btn btn-outline-secondary btn-sm"
-                    href="https://scholar.google.com/citations?hl=en&user=k6zWX4EAAAAJ&view_op=list_works"
-                    target="_blank">All Publications</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 shadow-sm text-center">
-                  <div class="card-body">
-                    <i class="fas fa-trophy fa-2x text-warning mb-3"></i>
-                    <h5 class="card-title">ICALT Best Short Paper</h5>
-                    <p class="card-text">Supervised award-winning student-led paper at IEEE ICALT 2024.</p>
-                    <a class="btn btn-outline-secondary btn-sm"
-                    href="https://ieeexplore.ieee.org/abstract/document/10645887/"
-                    target="_blank">Winning Paper</a>
+                      href="https://scholar.google.com/citations?hl=en&amp;user=k6zWX4EAAAAJ&amp;view_op=list_works"
+                      target="_blank">All Publications</a>
                   </div>
                 </div>
               </div>
@@ -590,12 +623,25 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col">
+                <div class="card h-100 shadow-sm text-center">
+                  <div class="card-body">
+                    <i class="fas fa-trophy fa-2x text-warning mb-3"></i>
+                    <h5 class="card-title">ICALT Best Short Paper</h5>
+                    <p class="card-text">Supervised award-winning student-led paper at IEEE ICALT 2024.</p>
+                    <a class="btn btn-outline-secondary btn-sm"
+                      href="https://ieeexplore.ieee.org/abstract/document/10645887/" target="_blank">Winning Paper</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
       <!-- Industry & Professional Exposure -->
-      <div class="accordion-item mb-4">
+      <div class="accordion-item mb-4 border-top">
         <h2 class="accordion-header" id="headingIndustry">
           <button aria-expanded="false" class="accordion-button collapsed fw-bold text-primary"
             data-bs-target="#collapseIndustry" data-bs-toggle="collapse" type="button">
@@ -612,8 +658,8 @@
                     <h5 class="card-title">CSE Industry Connect</h5>
                     <p class="card-text">Coordinated company visits with Microsoft, Accenture, Odoo.</p>
                     <a class="btn btn-outline-secondary btn-sm"
-                    href="https://www.aus.edu/article/cse-students-explore-cutting-edge-technologies-at-microsoft-innovation-hub"
-                    target="_blank">Visit Microsoft</a>
+                      href="https://www.aus.edu/article/cse-students-explore-cutting-edge-technologies-at-microsoft-innovation-hub"
+                      target="_blank">Visit Microsoft</a>
                   </div>
                 </div>
               </div>
@@ -624,8 +670,8 @@
                     <h5 class="card-title">PC Building Workshop</h5>
                     <p class="card-text">Hands-on event helping students learn and build custom computers.</p>
                     <a class="btn btn-outline-secondary btn-sm"
-                    href="https://www.aus.edu/article/the-computer-engineering-club-holds-a-pc-building-workshop"
-                    target="_blank">Learn More</a>
+                      href="https://www.aus.edu/article/the-computer-engineering-club-holds-a-pc-building-workshop"
+                      target="_blank">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -636,8 +682,8 @@
                     <h5 class="card-title">Python Workshop Series</h5>
                     <p class="card-text">Conducted a three-part Python series with over 100 students attending.</p>
                     <a class="btn btn-outline-secondary btn-sm"
-                    href="https://www.aus.edu/article/cen-clubs-hold-an-introduction-to-python-workshop-series"
-                    target="_blank">Learn More</a>
+                      href="https://www.aus.edu/article/cen-clubs-hold-an-introduction-to-python-workshop-series"
+                      target="_blank">Learn More</a>
                   </div>
                 </div>
               </div>
